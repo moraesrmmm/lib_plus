@@ -6,22 +6,57 @@
         <meta name="description" content="" />
         <meta name="author" content="" />
         <title>Sistema de Biblioteca</title>
-        <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
-        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
-        <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet" type="text/css" />
-        <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
-        <link href="assets/css/styles.css" rel="stylesheet" />
-        <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.css">
+        <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+        <style>
+            body {
+                margin: 0;
+                padding: 0;
+                background-color: #17a2b8;
+                height: 100vh;
+            }
+            #login .container #login-row #login-column #login-box {
+                margin-top: 120px;
+                max-width: 600px;
+                height: 320px;
+                border: 1px solid #9C9C9C;
+                background-color: #EAEAEA;
+            }
+            #login .container #login-row #login-column #login-box #login-form {
+                padding: 20px;
+            }
+            #login .container #login-row #login-column #login-box #login-form #register-link {
+                margin-top: -85px;
+            }
+        </style>
     </head>
-    <body>
-        <?php include("assets/view/includes/nav.php") ?>
-        <div class="container-fluid p-4">
-            <span class="text-dark h3">Livros</span>
-            <hr>
+<body>
+    <div id="login">
+        <h3 class="text-center text-white pt-5">LIB PLUS</h3>
+        <div class="container">
+            <div id="login-row" class="row justify-content-center align-items-center">
+                <div id="login-column" class="col-md-6">
+                    <div id="login-box" class="col-md-12">
+                        <form id="login-form" class="form" action="" method="post">
+                            <h3 class="text-center text-info">Entrar</h3>
+                            <div class="form-group">
+                                <label for="usuario" class="text-info">Usuário:</label><br>
+                                <input type="text" name="usuario" id="usuario" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label for="senha" class="text-info">Senha:</label><br>
+                                <input type="text" name="senha" id="senha" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <input type="submit" name="submit" class="btn btn-info btn-md" value="Entrar">
+                            </div>
+                            <div class="text-right">
+                                <a href="assets/view/livros.view.php" class="text-info">Resgistre-se aqui</a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
         </div>
-        <a href=""></a>
-        <script src="assets/bootstrap/js/bootstrap.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-        <script src="js/scripts.js"></script>
-    </body>
+    </div>
+</body>
 </html>
