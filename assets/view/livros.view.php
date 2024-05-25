@@ -11,7 +11,7 @@
         <div class="container-fluid p-4">
             <span class="text-dark h3">Livros</span>
             <hr>
-            <a href="novo_livro.view.php" class="btn btn-dark mb-4 bg-primary">Novo Livro</a>
+            <a href="novo_livro.view.php" class="btn btn-dark mb-4 btn-primary">Novo Livro</a>
 
             <table class="table table-hover">
                 <thead>
@@ -20,7 +20,7 @@
                     <th>Autor</th>
                     <th>Categoria</th>
                     <th>Ano de publicação</th>
-                    <th>Opções</th>
+                    <th></th>
                 </thead>
                 <tbody>
                     <?php include("../php/livros.php"); ?>
@@ -32,8 +32,8 @@
                                 <td><?php echo $livro['categoria']; ?></td>
                                 <td><?php echo $livro['ano_publicacao']; ?></td>
                                 <td>
-                                    <a href='pessoas_alterar.php?id=<?php echo $livro["id"]; ?>' style='text-decoration:none'>🅰️</a>
-                                    <a href='#' style='text-decoration:none'>❌</a>   
+                                    <a href='alterar_livro.view.php?id=<?php echo $livro["id"]; ?>' style='text-decoration:none'>⚙️</a>
+                                    <a href='../php/deleta_livro.php?id=<?php echo $livro["id"]; ?>' style='text-decoration:none; color:black;'>✖️</a>   
                                 </td>
                             </tr>
                     <?php endforeach; ?>

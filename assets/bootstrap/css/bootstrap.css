@@ -2333,15 +2333,18 @@ fieldset:disabled a.btn {
 }
 
 .btn-primary {
-  color: #fff;
-  background-color: rgb(189, 93, 56);
-  border-color: rgb(189, 93, 56);
+    background-color: rgb(189, 93, 56) !important;
+    color: white;
+    border: 2px solid rgb(189, 93, 56) !important;
+    padding: 10px 20px !important;
+    cursor: pointer !important;
+    transition: border-color 0.3s, background-color 0.3s !important;
 }
 
 .btn-primary:hover {
-  color: #fff;
-  background-color: #0069d9;
-  border-color: #0062cc;
+  color: #fff !important;
+  background-color: rgb(189, 93, 56) !important;
+  border-color: white !important; /* destaque com a cor branca */
 }
 
 .btn-primary:focus, .btn-primary.focus {

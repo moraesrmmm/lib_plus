@@ -3,7 +3,9 @@
     </a>
     <div class="collapse navbar-collapse " id="navbarResponsive">
         <ul class="navbar-nav">
-            <li class="nav-item"><a class="nav-link js-scroll-trigger" href="assets/view/livros.view.php">Livros</a></li>
+            <li class="nav-item"><a class="nav-link js-scroll-trigger" href="livros.view.php">Livros</a></li>
+            <li class="nav-item"><a class="nav-link js-scroll-trigger" href="categorias.view.php">Categorias</a></li>
+            <li class="nav-item"><a class="nav-link js-scroll-trigger" href="autores.view.php">Autores</a></li>
             <li class="nav-item"><a class="nav-link js-scroll-trigger" href="">Empréstimos</a></li>
             <li class="nav-item"><a class="nav-link js-scroll-trigger" href="">Comentários</a></li>
             <li class="nav-item"><a class="nav-link js-scroll-trigger" href="">Reservas</a></li>
