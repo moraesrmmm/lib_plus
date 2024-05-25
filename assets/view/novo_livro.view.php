@@ -2,10 +2,10 @@
 <html>
 <head>
     <title>Cadastrar Novo Livro</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <?php include("includes/includes.php") ?>
 </head>
 <body>
-    <div class="container">
+    <div class="container jumbotron mt-5">
         <h1>Cadastrar Novo Livro</h1>
         <form action="../php/salvar_livro.php" method="post">
             <div class="form-group">
@@ -17,7 +17,7 @@
                 <label for="autor">Autor:</label>
                 <select class="form-control" id="autor" name="autor_id">
                     <?php
-                    include '../php/obter_dados.php';
+                    include ('../php/obter_dados.php');
                     $autores = obterAutores();
                     if ($autores->num_rows > 0) {
                         while ($row = $autores->fetch_assoc()) {
