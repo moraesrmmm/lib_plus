@@ -10,6 +10,12 @@
             <li class="nav-item"><a class="nav-link js-scroll-trigger" href="comentarios.view.php">Comentários</a></li>
             <li class="nav-item"><a class="nav-link js-scroll-trigger" href="reservas.view.php">Reservas</a></li>
             <li class="nav-item"><a class="nav-link js-scroll-trigger" href="usuarios.view.php">Usuários</a></li>
+            <li class="nav-item">
+                <form action="../php/logout.php" method="post">
+                    <button class="btn btn-dark mt-2" type="submit">Logout</button>
+                </form>
+            </li>
         </ul>
+        
     </div>
 </nav>

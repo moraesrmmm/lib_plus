@@ -1,3 +1,4 @@
+<?php include("../config/session.php") ?>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -31,7 +32,7 @@
                         <td><?php echo $usuario['user_senha'];?></td>
                         <td>
                             <div class="d-flex justify-content-end">
-                                <a href='alterar_usuarios.view.php?id=<?php echo $usuario["user_id"]; ?>' class="me-2" style='text-decoration:none'>⚙️</a>
+                                <a href='alterar_usuario.view.php?id=<?php echo $usuario["user_id"]; ?>' class="me-2" style='text-decoration:none'>⚙️</a>
                                 <a href='../php/deleta_usuario.php?id=<?php echo $usuario["user_id"]; ?>' style='text-decoration:none; color:black;'>✖️</a>
                             </div>
                         </td>

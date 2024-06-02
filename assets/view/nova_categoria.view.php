@@ -1,3 +1,4 @@
+<?php include("../config/session.php") ?>
 <!DOCTYPE html>
 <html>
 <head>

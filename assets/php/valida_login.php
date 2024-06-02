@@ -1,4 +1,5 @@
 <?php
+session_start();
 include("../config/config.php");
 
 $email = $_POST['email'];
@@ -15,6 +16,8 @@ while ($dados = $resultado->fetch_assoc()) {
 }
 
 if ($aDados) {
+    $_SESSION['loggedin'] = true;
+    $_SESSION['user_id'] = $user['user_id'];
     header("Location: ../view/livros.view.php");
 } else {
     header("Location: ../../index.php");

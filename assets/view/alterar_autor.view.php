@@ -1,3 +1,4 @@
+<?php include("../config/session.php") ?>
 <?php
 include("../config/config.php");
 $id = $_GET['id'];
