@@ -12,7 +12,6 @@
                 <label for="titulo">Título do Livro:</label>
                 <input type="text" class="form-control" id="titulo" name="titulo">
             </div>
-
             <div class="form-group">
                 <label for="autor">Autor:</label>
                 <select class="form-control" id="autor" name="autor_id">

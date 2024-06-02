@@ -10,7 +10,7 @@ $ano_publicacao = $_POST['ano_publicacao'];
 
 $sql = "UPDATE livros 
         SET 
-            livro_titulo = '$titulo', 
+            livro_titulo   = '$titulo', 
             livro_autor_id = $autor_id, 
             livro_categ_id = $categoria_id, 
             livro_ano_publ = $ano_publicacao

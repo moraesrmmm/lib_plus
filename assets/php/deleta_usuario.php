@@ -4,10 +4,10 @@ include("../config/config.php");
 
 $id = $_GET['id'];
 
-$sql = "DELETE FROM categorias WHERE categ_id = $id";
+$sql = "DELETE FROM usuarios WHERE user_id = $id";
         
 if ($conexao->query($sql) === TRUE) {
-    header("Location: ../view/categorias.view.php");
+    header("Location: ../view/usuarios.view.php");
     exit; 
 } else {
     echo "Erro: " . $sql . "<br>" . $conexao->error;

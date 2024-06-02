@@ -6,8 +6,6 @@ $id = $_GET['id'];
 
 $sql = "DELETE FROM livros WHERE livro_id = $id";
         
-
-
 if ($conexao->query($sql) === TRUE) {
     header("Location: ../view/livros.view.php");
     exit; 

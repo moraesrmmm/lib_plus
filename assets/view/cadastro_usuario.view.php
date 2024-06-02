@@ -15,17 +15,16 @@
                 background-color: white;
                 height: 100vh;
             }
-            #login .container #login-row #login-column #login-box {
+            #cadastro .container #cadastro-row #cadastro-column #cadastro-box {
                 margin-top: 70px;
                 max-width: 600px;
-                height: 320px;
                 border: 1px solid #9C9C9C;
                 background-color: #EAEAEA;
             }
-            #login .container #login-row #login-column #login-box #login-form {
+            #cadastro .container #cadastro-row #cadastro-column #cadastro-box #cadastro-form {
                 padding: 20px;
             }
-            #login .container #login-row #login-column #login-box #login-form #register-link {
+            #cadastro .container #cadastro-row #cadastro-column #cadastro-box #cadastro-form #register-link {
                 margin-top: -85px;
             }
             .btn-primary {
@@ -47,14 +46,18 @@
         </style>
     </head>
 <body>
-    <div id="login">
+    <div id="cadastro">
         <h3 class="text-center text-white pt-5">LIB PLUS</h3>
         <div class="container">
-            <div id="login-row" class="row justify-content-center align-items-center">
-                <div id="login-column" class="col-md-6">
-                    <div id="login-box" class="col-md-12">
-                        <form id="login-form" class="form" action="assets/php/valida_login.php" method="post">
-                            <h3 class="text-center text-info">Entrar</h3>
+            <div id="cadastro-row" class="row justify-content-center align-items-center">
+                <div id="cadastro-column" class="col-md-6">
+                    <div id="cadastro-box" class="col-md-12">
+                        <form id="cadastro-form" class="form" action="../php/salvar_usuario.php" method="post">
+                            <h3 class="text-center text-info">Cadastrar Usuário</h3>
+                            <div class="form-group">
+                                <label for="nome" class="text-info">Nome:</label><br>
+                                <input type="text" name="nome" id="nome" class="form-control">
+                            </div>
                             <div class="form-group">
                                 <label for="email" class="text-info">Email:</label><br>
                                 <input type="text" name="email" id="email" class="form-control">
@@ -64,10 +67,7 @@
                                 <input type="text" name="senha" id="senha" class="form-control">
                             </div>
                             <div class="form-group row" style="margin-left: 1px;">
-                                <input type="submit" name="submit" class="btn btn-primary btn-md " value="Entrar">
-                                <div class="text-right col-sm-9">
-                                    <a href="assets/view/cadastro_usuario.view.php" class="text-info">Registre-se aqui</a>
-                                </div>
+                                <input type="submit" name="submit" class="btn btn-primary btn-md " value="Cadastrar">
                             </div>
                         </form>
                     </div>

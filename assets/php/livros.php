@@ -11,7 +11,7 @@ $sql = "SELECT livros.livro_id AS id,
         JOIN categorias ON livros.livro_categ_id = categorias.categ_id";
 
 $resultado = $conexao->query($sql);
-$livros    = [];
+$livros = [];
 while ($dados = $resultado->fetch_assoc()) {
     $livros[] = $dados;
 }

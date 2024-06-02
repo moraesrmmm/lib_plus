@@ -1,12 +1,12 @@
 <?php
 include("../config/config.php");
 
-$sql = "SELECT categ_id AS id, categ_nome AS nome FROM categorias";
-    
+$sql = "SELECT * FROM usuarios"; 
+
 $resultado = $conexao->query($sql);
-$categorias = [];
+$usuarios = [];
 while ($dados = $resultado->fetch_assoc()) {
-    $categorias[] = $dados;
+    $usuarios[] = $dados;
 }
 
 $conexao->close();

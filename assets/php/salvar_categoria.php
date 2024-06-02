@@ -3,8 +3,7 @@ include("../config/config.php");
 
 $nome = $_POST['nome'];
 
-$sql = "INSERT INTO categorias (categ_nome)
-        VALUES ('$nome')";
+$sql = "INSERT INTO categorias (categ_nome) VALUES ('$nome')";
 
 
 if ($conexao->query($sql) === TRUE) {
