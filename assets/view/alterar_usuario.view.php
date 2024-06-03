@@ -1,5 +1,5 @@
-<?php include("../config/session.php") ?>
 <?php
+include("../config/session.php"); 
 include("../config/config.php");
 $id = $_GET['id'];
 $sql = "SELECT * FROM usuarios WHERE user_id=$id";

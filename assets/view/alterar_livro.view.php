@@ -1,10 +1,10 @@
-<?php include("../config/session.php") ?>
 <?php
-    include("../config/config.php");
-    $id = $_GET['id'];
-    $sql = "SELECT * FROM livros WHERE livro_id=$id";
-    $rs = $conexao->query($sql);
-    $dados = $rs->fetch_assoc();
+include("../config/session.php");
+include("../config/config.php");
+$id = $_GET['id'];
+$sql = "SELECT * FROM livros WHERE livro_id=$id";
+$rs = $conexao->query($sql);
+$dados = $rs->fetch_assoc();
 ?>
 
 <!DOCTYPE html>

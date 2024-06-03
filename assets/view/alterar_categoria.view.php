@@ -1,5 +1,5 @@
-<?php include("../config/session.php") ?>
 <?php
+include("../config/session.php");
 include("../config/config.php");
 $id = $_GET['id'];
 $sql = "SELECT * FROM categorias WHERE categ_id=$id";

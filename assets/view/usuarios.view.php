@@ -13,9 +13,9 @@
         <span class="text-dark h3">Usuários</span>
         <hr>
         <table class="table table-hover">
-            <thead>
+            <thead class="thead-custom">
                 <tr>
-                    <th>ID</th>
+                    <th>Código</th>
                     <th>Nome</th>
                     <th>Email</th>
                     <th>Senha</th>

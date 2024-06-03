@@ -15,9 +15,9 @@
         <a href="novo_autor.view.php" class="btn btn-dark mb-4 btn-primary">Novo Autor</a>
 
         <table class="table table-hover">
-            <thead>
+            <thead class="thead-custom">
                 <tr>
-                    <th>ID</th>
+                    <th>Código</th>
                     <th>Nome</th>
                     <th></th>
                 </tr>

@@ -13,10 +13,9 @@
             <span class="text-dark h3">Livros</span>
             <hr>
             <a href="novo_livro.view.php" class="btn btn-dark mb-4 btn-primary">Novo Livro</a>
-
             <table class="table table-hover">
-                <thead>
-                    <th>ID</th>
+                <thead class="thead-custom">
+                    <th>Código</th>
                     <th>Titulo</th>
                     <th>Autor</th>
                     <th>Categoria</th>
@@ -33,8 +32,10 @@
                                 <td><?php echo $livro['categoria']; ?></td>
                                 <td><?php echo $livro['ano_publicacao']; ?></td>
                                 <td>
-                                    <a href='alterar_livro.view.php?id=<?php echo $livro["id"]; ?>' style='text-decoration:none'>⚙️</a>
-                                    <a href='../php/deleta_livro.php?id=<?php echo $livro["id"]; ?>' style='text-decoration:none; color:black;'>✖️</a>   
+                                    <div class="d-flex justify-content-end">
+                                        <a href='alterar_livro.view.php?id=<?php echo $livro["id"]; ?>' style='text-decoration:none'>⚙️</a>
+                                        <a href='../php/deleta_livro.php?id=<?php echo $livro["id"]; ?>' style='text-decoration:none; color:black;'>✖️</a>   
+                                    </div>
                                 </td>
                             </tr>
                     <?php endforeach; ?>
