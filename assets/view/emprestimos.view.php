@@ -41,13 +41,13 @@
                                 <td><?php echo $emprestimo['livro']; ?></td>
                                 <td><?php echo $emprestimo['usuario']; ?></td>
                                 <td><?php echo $data_emprestimo_formatada; ?></td>
-                                <td><?php echo $data_devolucao_formatada; ?></td>
+                                <td><?php echo $emprestimo['status'] == 'devolvido' ? $data_devolucao_formatada : ''; ?></td>
                                 <td><?php echo $emprestimo['status']; ?></td>
                                 <td>
                                     <div class="d-flex justify-content-end">
                                         <a href='../php/mudar_status.php?id=<?php echo $emprestimo["id"]; ?>' style='text-decoration:none'>📌</a>
                                         <a href='alterar_emprestimo.view.php?id=<?php echo $emprestimo["id"]; ?>' style='text-decoration:none'>⚙️</a>
-                                        <a href='../php/deleta_emprestimo.php?id=<?php echo $emprestimo["id"]; ?>' style='text-decoration:none; color:black;'>✖️</a>   
+                                        <a href='../php/deletar_emprestimo.php?id=<?php echo $emprestimo["id"]; ?>' style='text-decoration:none; color:black;'>✖️</a>   
                                     </div>
                                 </td>
                             </tr>
