@@ -14,4 +14,18 @@ function obterCategorias() {
     $result_categorias = $conexao->query($sql_categorias);
     return $result_categorias;
 }
+
+function obterLivros(){
+    global $conexao;
+    $sql_livros = "SELECT livro_id, livro_titulo FROM livros";
+    $result_livros = $conexao->query($sql_livros);
+    return $result_livros;
+}
+
+function obterUsuarios(){
+    global $conexao;
+    $sql_usuarios = "SELECT user_id, user_nome FROM usuarios";
+    $result_usuarios = $conexao->query($sql_usuarios);
+    return $result_usuarios;
+}
 ?>
