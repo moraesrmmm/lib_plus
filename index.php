@@ -1,3 +1,4 @@
+<?php include('assets/config/verifica_sessao.php'); ?>
 <!DOCTYPE html>
 <html lang="pt-br">
     <head>
