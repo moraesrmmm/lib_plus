@@ -1,4 +1,5 @@
-<?php include("../config/session.php") ?>
+<?php include("../config/session.php");?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>

@@ -1,3 +1,14 @@
+<?php session_start(); 
+
+if (isset($_SESSION['emailExiste']) && $_SESSION['emailExiste']) {
+    $paddingClasse = "p-2";
+    $mensagem      = "Email já cadastrado, tente se cadastrar por outro";
+} else {
+    $paddingClasse = "";
+    $mensagem      = "";
+}
+
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -69,7 +80,13 @@
                             <div class="form-group row" style="margin-left: 1px;">
                                 <input type="submit" name="submit" class="btn btn-primary btn-md " value="Cadastrar">
                             </div>
+                            <div class="bg-danger mt-0 mb-2 <?php echo $paddingClasse; ?>">
+                                <?php
+                                    echo $mensagem;
+                                ?>
+                            </div>
                         </form>
+                       
                     </div>
                 </div>
             </div>

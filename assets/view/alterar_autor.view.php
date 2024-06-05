@@ -1,9 +1,9 @@
 <?php
 include("../config/session.php");
 include("../config/config.php");
-$id = $_GET['id'];
-$sql = "SELECT * FROM autores WHERE autor_id=$id";
-$rs = $conexao->query($sql);
+$id    = $_GET['id'];
+$sql   = "SELECT * FROM autores WHERE autor_id=$id";
+$rs    = $conexao->query($sql);
 $dados = $rs->fetch_assoc();
 ?>
 

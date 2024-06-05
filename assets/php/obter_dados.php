@@ -24,8 +24,23 @@ function obterLivros(){
 
 function obterUsuarios(){
     global $conexao;
-    $sql_usuarios = "SELECT user_id, user_nome FROM usuarios";
+    $sql_usuarios = "SELECT user_id, user_nome, user_email FROM usuarios";
     $result_usuarios = $conexao->query($sql_usuarios);
     return $result_usuarios;
 }
+
+function obterUsuariosByEmail($email) {
+    global $conexao;
+    
+    $stmt = $conexao->prepare("SELECT * FROM usuarios WHERE user_email = ?");
+    $stmt->bind_param("s", $email);
+    $stmt->execute();
+    $result_usuarios = $stmt->get_result();
+    if ($result_usuarios->num_rows > 0) {
+        return true; 
+    } else {
+        return false;
+    }
+}
+
 ?>

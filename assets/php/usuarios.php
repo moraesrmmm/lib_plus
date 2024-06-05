@@ -4,7 +4,7 @@ include("../config/config.php");
 $sql = "SELECT * FROM usuarios"; 
 
 $resultado = $conexao->query($sql);
-$usuarios = [];
+$usuarios  = [];
 while ($dados = $resultado->fetch_assoc()) {
     $usuarios[] = $dados;
 }

@@ -27,14 +27,12 @@
                     <?php include("../php/emprestimos.php"); ?>
                         <?php foreach ($emprestimos as $emprestimo): 
                             // Formatando as datas para ficar mais bonito visualmente
-                            $dataEmprestimo = $emprestimo['data_emprestimo'];
-                            $dataDevolucao = $emprestimo['data_devolucao'];
-
-                            $dateEmprestimo = new DateTime($dataEmprestimo);
-                            $dateDevolucao = new DateTime($dataDevolucao);
-
+                            $dataEmprestimo            = $emprestimo['data_emprestimo'];
+                            $dataDevolucao             = $emprestimo['data_devolucao'];
+                            $dateEmprestimo            = new DateTime($dataEmprestimo);
+                            $dateDevolucao             = new DateTime($dataDevolucao);
                             $data_emprestimo_formatada = $dateEmprestimo->format('d-m-Y');
-                            $data_devolucao_formatada = $dateDevolucao->format('d-m-Y');
+                            $data_devolucao_formatada  = $dateDevolucao->format('d-m-Y');
                         ?>
                             <tr>
                                 <td><?php echo $emprestimo['id']; ?></td>
