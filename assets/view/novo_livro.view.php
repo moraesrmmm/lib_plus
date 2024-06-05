@@ -43,7 +43,7 @@
 
             <div class="form-group">
                 <label for="ano">Ano de Publicação:</label>
-                <input type="number" class="form-control" id="ano" name="ano_publicacao">
+                <input type="text" class="form-control" id="ano" name="ano_publicacao" maxlength="4">
             </div>
 
             <button type="submit" class="btn btn-primary">Cadastrar Livro</button>

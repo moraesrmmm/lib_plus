@@ -54,7 +54,7 @@ $dados = $rs->fetch_assoc();
             </div>
             <div class="form-group">
                 <label for="ano">Ano de Publicação:</label>
-                <input type="number" class="form-control" id="ano" name="ano_publicacao"  value="<?php echo $dados['livro_ano_publ']; ?>" >
+                <input type="text" class="form-control" id="ano" name="ano_publicacao"  value="<?php echo $dados['livro_ano_publ']; ?>" maxlength="4">
             </div>
             <button type="submit" class="btn btn-primary">Salvar Alterações</button>
         </form>
