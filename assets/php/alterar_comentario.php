@@ -2,7 +2,7 @@
 
 include("../config/config.php");
 
-$comentario_id       = $_POST['id'];
+$comentario_id   = $_POST['id'];
 $livro_id        = $_POST['livro_id']; 
 $usuario_id      = $_POST['usuario_id'];
 $comentario      = $_POST['comentario'];
