@@ -3,7 +3,10 @@
 if (isset($_SESSION['emailExiste']) && $_SESSION['emailExiste']) {
     $paddingClasse = "p-2";
     $mensagem      = "Email já cadastrado, tente se cadastrar por outro";
-} else {
+}elseif(isset($_SESSION['camposVazios']) && $_SESSION['camposVazios']){
+    $paddingClasse = "p-2";
+    $mensagem      = "Todos campos devem ser preenchidos";
+}else {
     $paddingClasse = "";
     $mensagem      = "";
 }
@@ -80,13 +83,12 @@ if (isset($_SESSION['emailExiste']) && $_SESSION['emailExiste']) {
                             <div class="form-group row" style="margin-left: 1px;">
                                 <input type="submit" name="submit" class="btn btn-primary btn-md " value="Cadastrar">
                             </div>
-                            <div class="bg-danger mt-0 mb-2 <?php echo $paddingClasse; ?>">
+                            <div class="bg-danger mt-0 mb-2 <?php echo $paddingClasse; ?>" style="border-radius: 5px; color:white; font-weight: bolder;">
                                 <?php
                                     echo $mensagem;
                                 ?>
                             </div>
                         </form>
-                       
                     </div>
                 </div>
             </div>

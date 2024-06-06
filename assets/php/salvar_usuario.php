@@ -4,10 +4,17 @@ session_start();
 include("../config/config.php");
 include("obter_dados.php");
 
-$nome  = $_POST['nome'];
-$email = $_POST['email'];
-$senha = $_POST['senha'];
-$_SESSION['emailExiste'] = false;
+$nome  = trim($_POST['nome']);
+$email = trim($_POST['email']);
+$senha = trim($_POST['senha']);
+$_SESSION['emailExiste']  = false;
+$_SESSION['camposVazios'] = false;
+
+if (empty($nome) || empty($email) || empty($senha)) {
+    $_SESSION['camposVazios'] = true;
+    header('Location: ../view/cadastro_usuario.view.php');
+    exit;
+}
 
 
 if(!obterUsuariosByEmail($email)){
