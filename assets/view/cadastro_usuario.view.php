@@ -4,7 +4,7 @@ if (isset($_SESSION['emailExiste']) && $_SESSION['emailExiste']) {
     $paddingClasse = "p-2";
     $mensagem      = "Email já cadastrado, tente se cadastrar por outro";
 }elseif(isset($_SESSION['camposVazios']) && $_SESSION['camposVazios']){
-    $paddingClasse = "p-2";
+    $paddingClasse = "p -2";
     $mensagem      = "Todos campos devem ser preenchidos";
 }else {
     $paddingClasse = "";
@@ -22,42 +22,7 @@ if (isset($_SESSION['emailExiste']) && $_SESSION['emailExiste']) {
     <title>Sistema de Biblioteca</title>
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
     <link rel="shortcut icon" href="assets/img/livro_icon.png" type="image/x-icon">
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            background-color: white;
-            height: 100vh;
-        }
-        #cadastro .container #cadastro-row #cadastro-column #cadastro-box {
-            margin-top: 70px;
-            max-width: 600px;
-            border: 1px solid #9C9C9C;
-            background-color: #EAEAEA;
-        }
-        #cadastro .container #cadastro-row #cadastro-column #cadastro-box #cadastro-form {
-            padding: 20px;
-        }
-        #cadastro .container #cadastro-row #cadastro-column #cadastro-box #cadastro-form #register-link {
-            margin-top: -85px;
-        }
-        .btn-primary {
-            background-color: rgb(189, 93, 56) !important;
-            color: white;
-            border: 2px solid rgb(189, 93, 56) !important;
-            padding: 10px 20px !important;
-            cursor: pointer !important;
-            transition: border-color 0.3s, background-color 0.3s !important;
-        }
-        .btn-primary:hover {
-            color: #fff !important;
-            background-color: rgb(189, 93, 56) !important;
-            border-color: white !important; /* destaque com a cor branca */
-        }
-        .text-info{
-            color: rgb(189, 93, 56) !important;
-        }
-    </style>
+    <link rel="stylesheet" href="../css/cadastro.css">
 </head>
 <body>
     <div id="cadastro">

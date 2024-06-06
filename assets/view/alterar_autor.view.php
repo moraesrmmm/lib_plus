@@ -11,7 +11,7 @@ $dados = $rs->fetch_assoc();
 <html>
 <head>
     <title>Editar Autor</title>
-    <link rel="stylesheet" href="../bootstrap/css/bootstrap.css">
+    <link rel="eet" href="../bootstrap/css/bootstrap.css">
 </head>
 <body>
     <div class="container jumbotron mt-5">
